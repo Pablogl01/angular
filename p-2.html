@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/subcss/main.css" rel="stylesheet">
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <title>practica 2</title>
+</head>
+<body class="d-flex flex-column">
+    <nav class="navbar fixed-top d-flex align-items-center bg-white">
+        <img src="Recursos projecte sprint 2-20211109/Imagenes/logo-bookmark.svg" class="navbar-brand" style="margin-left:15%;" href="#">
+            <div class="d-flex flex-row align-items-center" style="width: 40%;">
+                <a class="nav-link text-muted fw-bold" href="#features">FEATURES</a>
+                <a class="nav-link text-muted fw-bold" href="#">PRICING</a>
+                <a class="nav-link text-muted fw-bold" href="#">CONTACT</a>
+                <form class="pt-5" style="margin-left: 20px;">
+                    <button class="btn bg-secondary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">LOGIN</button>
+                </form>
+            </div>
+    </nav>
+    <div id="top-div" class="d-flex felx-row">
+        <div id="p1" class="d-flex justify-content-center flex-column" style="width: 30%; margin-top: 150px; margin-left: 14%; height: 600px;">
+            <p id="title-1" class="fw-bold display-3 ">A Simple Bookmark Manager</p>
+            <p class="text-muted fw-bold h5" style="max-width: 90%; word-spacing: 5px;">A clean and simple interface to organize your favourite websites. Open a new browser and see your sites load instantly. Try it for free</p>
+            <div class="d-flex flex-row" style="margin-top: 25px;">
+                <form>
+                    <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">Get it on Chrome</button>
+                </form>
+                <form style="margin-left: 15px;">
+                    <button class="btn bg-light fw-bold shadow-sm p-3 mb-5 text-muted px-4 py-2" type="submit">Get it on Firefox</button>
+                </form>
+            </div>
+        </div>
+        <img id="img-top" style="width: 700px; height: 500px; margin-top: 170px; z-index: 10; margin-left: 150px;" src="Recursos projecte sprint 2-20211109/Imagenes/illustration-hero.svg">
+        <div id="pill-top" class="bg-primary rounded-pill position-absolute" style="width: 1000px; height: 450px; left:70vw;  top:300px;"></div>
+    </div>
+    <div id="features"></div>
+    <div id="p2" class="d-flex flex-column" style="margin-top: 300px;">
+        <div>
+            <p class=" d-flex justify-content-center fw-bold display-4 ">Features</p>
+            <p class="d-flex justify-content-center text-muted m-0">Our aim is to make it quick and easy for you to access your </p>
+            <p class="d-flex justify-content-center text-muted m-0"> favourite websites. Your bookmarks sync between your devices</p>
+            <p class="d-flex justify-content-center text-muted m-0"> so you can access then on the go</p>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div id="prueba">
+                <ul class="nav nav-tabs d-flex justify-content-center mt-5" id="myTab" role="tablist" style="width: 550px; margin-left: 32%;">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Simple Bookmarking</button>
+                    </li>
+                    <li class="nav-item ms-5" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Speedy Searching</button>
+                    </li>
+                    <li class="nav-item ms-5" role="presentation">
+                        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Easy Sharing</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-5" id="myTabContent" style="width: 1500px;">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class=" featab d-flex flex-row">
+                            <div class=" pill bg-primary rounded-pill position-absolute" style="width: 65%; height: 450px; left:-20vw;  top:1500px;"></div>
+                            <img class="imgfea" style="width: 700px; height: 500px; z-index: 10; margin-left: 70px;" src="Recursos projecte sprint 2-20211109/Imagenes/illustration-features-tab-1.svg">
+                            <div class="featext" style="margin-left: 75px; margin-top: 50px; z-index: 1;">
+                                <p class="d-flex fw-bold fs-1">Boookmark in one click</p>
+                                <p class=" feaorg d-flex fw-bold text-muted" style="width: 55%;">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourites sites</p>
+                                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class=" featab d-flex flex-row">
+                            <div class=" pill bg-primary rounded-pill position-absolute" style="width: 65%; height: 450px; left:-20vw;  top:1500px;"></div>
+                            <img class="imgfea" style="width: 700px; height: 500px; z-index: 10; margin-left: 200px;" src="Recursos projecte sprint 2-20211109/Imagenes/illustration-features-tab-2.svg">
+                            <div class="featext" style="margin-left: 75px; margin-top: 50px; z-index: 1;">
+                                <p class="d-flex fw-bold fs-1">Boookmark in one click</p>
+                                <p class=" feaorg d-flex fw-bold text-muted" style="width: 55%; ">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourites sites</p>
+                                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="featab d-flex flex-row">
+                            <div class=" pill bg-primary rounded-pill position-absolute" style="width: 65%; height: 450px; left:-20vw;  top:1500px;"></div>
+                            <img class="imgfea" style="width: 700px; height: 500px; z-index: 10; margin-left: 200px;" src="Recursos projecte sprint 2-20211109/Imagenes/illustration-features-tab-3.svg">
+                            <div class="featext" style="margin-left: 75px; margin-top: 50px; z-index: 1;">
+                                <p class="d-flex fw-bold fs-1">Boookmark in one click</p>
+                                <p class="feaorg d-flex fw-bold text-muted" style="width: 55%;">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourites sites</p>
+                                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">More info</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column m-sb">
+        <div class="d-flex align-items-center flex-column">
+            <p class="fw-bold display-5 d-flex justify-content-center">Download the extension</p>
+            <p class="d-flex justify-content-center text-muted w-25 text-center">We've got more browsers in the pipeline. Please do let us know if you've got a favourite you'd like us to prioritze.</p>
+        </div>
+        <div id="con-borw" class="d-flex flex-row justify-content-center">
+            <div class="h-tab-brow mt-5 shadow px-4 rounded-3">
+                <img class="imgbrow my-5" src="Recursos projecte sprint 2-20211109/Imagenes/logo-chrome.svg">
+                <p class="d-flex justify-content-center fw-bold">Add to Chrome</p>
+                <p class="d-flex justify-content-center text-muted">Minum version 6.2</p>
+                <p class="dots text-muted mt-4">.................</p>
+                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">Add & install Extension</button>
+            </div>
+            <div class="h-tab-brow mt-6 shadow px-4 mx-4 rounded-3">
+                <img class="imgbrow my-5" src="Recursos projecte sprint 2-20211109/Imagenes/logo-firefox.svg">
+                <p class="d-flex justify-content-center fw-bold">Add to Firefox</p>
+                <p class="d-flex justify-content-center text-muted">Minum version 5.5</p>
+                <p class="dots text-muted mt-4">.................</p>
+                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">Add & install Extension</button>
+            </div>
+            <div class="h-tab-brow mt-7 shadow px-4 rounded-3">
+                <img class="imgbrow my-5" src="Recursos projecte sprint 2-20211109/Imagenes/logo-opera.svg">
+                <p class="d-flex justify-content-center fw-bold">Add to Opera</p>
+                <p class="d-flex justify-content-center text-muted">Minum version 4.6</p>
+                <p class="dots text-muted mt-4">.................</p>
+                <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2" type="submit">Add & install Extension</button>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column align-items-center m-sb">
+        <div class="text-center d-flex flex-column align-items-center">
+            <p class="fw-bold fs-2">Frequently ASked Questions</p>
+            <p class="text-muted w-50 ">Here are some of our FAQs, if you want have any other questions you'd answered please feel free to email us.</p>
+        </div>
+        <div class="w-50">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      What is Bookmark?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      How can in request a new borewser?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Is there a mobile app?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFor">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+                        What about other chromium browser?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    </div>
+                  </div>
+              </div>
+            <button class="btn bg-primary fw-bold shadow-sm p-3 mb-5 text-white px-4 py-2 mt-5" style="margin-left: 44%;" type="submit">More info</button>
+        </div>
+    </div>
+    <style>
+        @font-face {
+            font-family: "myFirstFont";
+            src: url("PaulGroteskSoft-Regular-Trail.otf");
+        }
+
+        *{
+            font-family: myFirstFont;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            #top-div{
+                flex-direction: column-reverse;
+            }
+
+            #img-top{
+                margin-top: 250px !important;
+                margin-left: 20% !important;
+                height: 50% !important;
+                width: 80% !important;
+            }
+
+            #pill-top{
+                height: 50vw !important;
+                left: 45vw !important;
+            }
+
+            #title-1{
+                text-align:center;
+            }
+
+            #p1{
+                width: 80% !important;
+                display: flex !important;
+                align-items: center !important;
+                margin-top: 0 !important;
+            }
+
+            #p2{
+                margin-top: 0 !important;
+            }
+
+            #myTab{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 500px !important;
+            }
+
+            #myTab > :nth-child(1){
+                margin-left: 45px;
+            }
+
+            .featab{
+                flex-direction: column !important;
+            }
+
+            .featext{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .feaorg{
+                width: 32% !important;
+                text-align:center;
+            }
+
+            .imgfea{
+                width: 500px !important;
+                height: 300px !important;
+                margin-left: 500px !important;
+            }
+
+            .pill{
+                position: relative !important;
+                width: 800px !important;
+                height: 300px !important;
+                top: 35vh !important;
+                left: 0vw !important;
+            }
+
+            #con-borw{
+                flex-direction: column !important;
+                align-items: center;
+            }
+
+            .h-tab-brow{
+                width: 350px;
+                height: 500px !important;
+                margin-top: 45px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+
+            .imgbrow{
+                padding: 0 !important;
+                width: 150px;
+            }
+        }
+    </style>
+</body>
+</html>

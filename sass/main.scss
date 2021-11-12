@@ -1,0 +1,55 @@
+// custop variable
+$primary: #5265E1;
+$secondary: #FA5959;
+$text-muted: #94989c;
+
+#myTab .nav-link {
+    color: $text-muted;
+    border-color: transparent;
+}
+
+#myTab .nav-link.active {
+    color: black;
+    border-bottom: 2px solid #FA5959;
+}
+
+#myTab .nav-link:hover{
+    color:$secondary;
+}
+
+.dots{
+    letter-spacing: 8px; /* Use letter-spacing to increase space between dots*/
+}
+
+.imgbrow{
+    padding-left: 25%;
+}
+
+.mt-6{
+    margin-top: 100px;
+}
+
+.mt-7{
+    margin-top: 150px;
+}
+
+.h-tab-brow{
+    height: 400px;
+}
+
+.m-sb{
+    margin-top:250px;
+}
+
+$accordion-icon-active-color: $secondary;
+$accordion-icon-color: $primary;
+$accordion-button-active-color: black;
+$accordion-button-active-bg: none;
+$accordion-button-focus-box-shadow: none;
+
+@import 'node_modules/bootstrap/scss/_functions';
+@import 'node_modules/bootstrap/scss/_variables';
+
+// import bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap';
+
